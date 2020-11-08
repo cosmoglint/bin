@@ -1,4 +1,4 @@
-# javascript nonsense, that I created during testing
+// javascript nonsense, that I created during testing
 
 
 
@@ -54,3 +54,9 @@
 // this.show = function(){
 //     circle(this.x_pos,this.y_pos,10);
 //   }
+
+
+
+  // if (this.line_ori == "usual"){
+  //   line(this.corner_bot_left.x,this.corner_bot_left.y,this.corner_bot_right.x,this.corner_bot_right.y);
+  // }
