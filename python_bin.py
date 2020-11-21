@@ -21,3 +21,37 @@
 #     "X","O","O"
 # ]
 # print(end(tt))
+
+
+
+# useless tic tac toe logic
+
+# global game_list
+# global grid_size
+# horiz_test = []
+# vert_test = []
+# for i in range(grid_size):
+#     for j in range(grid_size):
+#         vert_test.append(game_list[i+(grid_size*j)])
+#         horiz_test.append(game_list[(i*grid_size)+j])
+#     if (set(horiz_test) == set("X")) or (set(vert_test) == set("X")):
+#         return "x wins"
+#     elif (set(horiz_test) == set("O")) or (set(vert_test) == set("O")):
+#         return "o wins"
+#     else:
+#         vert_test = []
+#         horiz_test = []
+#         continue
+# diag_test = []
+# diag_test1 = []
+# for i in range(3):
+#     diag_test.append(game_list[i+(i*grid_size)])
+#     diag_test1.append(game_list[(i*grid_size)+(grid_size-i-1)])
+# if (set(diag_test) == set("X")) or (set(diag_test1) == set("X")):
+#     return "x wins"
+# elif (set(diag_test) == set("O")) or (set(diag_test1) == set("O")):
+#     return "o wins"
+# elif 0 not in game_list:
+#     return "draw"
+# else:
+#     return "continue"
