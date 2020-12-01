@@ -60,3 +60,20 @@
   // if (this.line_ori == "usual"){
   //   line(this.corner_bot_left.x,this.corner_bot_left.y,this.corner_bot_right.x,this.corner_bot_right.y);
   // }
+
+
+    // if (this.y_pos < (wh-block_size/2)){
+    //   for (let i=0; i<block_lst.length; i++){
+    //     if (i != val){
+    //       if ((block_lst[i].y_pos-this.y_pos)<this.height && (block_lst[i].y_pos-this.y_pos)>0 && Math.abs(block_lst[i].x_pos-this.x_pos)<block_size){
+    //         flag = 'dont';
+    //         break;
+    //       }
+    //       else{
+    //         continue;
+    //       }
+    //     }
+    //   }
+    //
+    //   (flag == 'move') ? (this.y_pos += g_force) : (this.y_pos = this.y_pos);
+    // }
