@@ -55,3 +55,17 @@
 #     return "draw"
 # else:
 #     return "continue"
+
+
+# rat problem
+
+
+# def black(years,rats):
+#     two_prev = 0
+#     prev = 0
+#     current = rats
+#     for i in range(years):
+#         current = (current*3)
+#         prev = current
+#         two_prev = prev
+#     return current + current/3
