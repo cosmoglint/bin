@@ -59,7 +59,6 @@
 
 # rat problem
 
-
 # def black(years,rats):
 #     two_prev = 0
 #     prev = 0
@@ -69,3 +68,16 @@
 #         prev = current
 #         two_prev = prev
 #     return current + current/3
+
+
+# def white(years,rats):
+#     prev = 0
+#     two_prev = 0
+#     three_prev = 0
+#     current = rats
+#     for i in range(years-1):
+#         current = (current*2) + (prev * 3) + (two_prev) - (three_prev)
+#         three_prev = two_prev
+#         two_prev = prev
+#         prev = current
+#     return current
