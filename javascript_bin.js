@@ -172,7 +172,7 @@
     // }
 
 
-    
+
     // set_numbers: function(){
     //     for (let i=0; i<this.rows; i++){
     //       for (let j=0; j<this.columns; j++){
@@ -218,3 +218,27 @@
     //       }
     //     }
     //   },
+
+
+    // bubble gravity
+
+    
+    // Bubble.prototype.collision = function(){
+    //   if ((this.ypos + this.radius) >= bound_box.highy){
+    //     this.trajectory.y = -1;
+    //   }
+    //   else if ((this.ypos - this.start.y) < 1) {
+    //     this.trajectory.y = 1;
+    //     // this.velocity = start_speed;
+    //     // this.ypos = this.start.y+1;
+    //   }
+    //   else{
+    //
+    //   }
+    // }
+    //
+    // Bubble.prototype.gravity = function(){
+    //   this.ypos += (gravity_value * this.velocity * this.trajectory.y);
+    //   this.velocity = ((this.ypos-this.start.y)/(bound_box.highy-this.start.y));
+    //   console.log(this.velocity);
+    // }
