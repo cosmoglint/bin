@@ -245,11 +245,49 @@
 
 
     // bubble clicked
-    
+
     // Bubble.prototype.clicked = function(){
     //   d = dist(mouseX,mouseY,this.xpos,this.ypos);
     //   if (d<=this.size/2 && this.genesis==false){
     //     this.alive = false;
     //     this.destroy();
     //   }
+    // }
+
+    // Bubble.prototype.wired = function(){
+    //   val = false;
+    //   for (wire of wire_array){
+    //     val = false;
+    //     dist_x = Math.abs(this.xpos - wire.xpos);
+    //     dist_y = Math.abs(this.ypos - wire.ypos);
+    //
+    //     if (dist_x > (this.radius + wire.width/2)) { continue; };
+    //     if (dist_y > (this.radius + wire.height/2)) { continue; };
+    //
+    //     if ((dist_x < wire.width/2 + this.radius) && (dist_y < wire.height/2)){
+    //       val = true;
+    //       wire.live = false;
+    //       break;
+    //     }
+    //     if ((dist_y < wire.height/2 + this.radius) && (dist_x < wire.width/2)){
+    //       val = true;
+    //       wire.live = false;
+    //       break;
+    //     }
+    //
+    //     d = dist(this.xpos,this.ypos,wire.xpos,wire.ypos);
+    //
+    //     if (d < this.radius + dist(wire.xpos,wire.ypos,wire.xpos+wire.width/2,wire.ypos+wire.height/2)){
+    //       val = true;
+    //       wire.live = false;
+    //       break;
+    //     }
+    //     else{
+    //       continue;
+    //     }
+    //     // dx = dist_x - wire.width/2;
+    //     // dy = dist_y - wire.width/2;
+    //
+    //   }
+    //   return val;
     // }
