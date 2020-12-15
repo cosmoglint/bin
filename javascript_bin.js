@@ -222,7 +222,7 @@
 
     // bubble gravity
 
-    
+
     // Bubble.prototype.collision = function(){
     //   if ((this.ypos + this.radius) >= bound_box.highy){
     //     this.trajectory.y = -1;
@@ -241,4 +241,15 @@
     //   this.ypos += (gravity_value * this.velocity * this.trajectory.y);
     //   this.velocity = ((this.ypos-this.start.y)/(bound_box.highy-this.start.y));
     //   console.log(this.velocity);
+    // }
+
+
+    // bubble clicked
+    
+    // Bubble.prototype.clicked = function(){
+    //   d = dist(mouseX,mouseY,this.xpos,this.ypos);
+    //   if (d<=this.size/2 && this.genesis==false){
+    //     this.alive = false;
+    //     this.destroy();
+    //   }
     // }
