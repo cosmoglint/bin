@@ -369,3 +369,5 @@
     //     circle(this.show_pos.x,this.show_pos.y,this.size);
     //   }
     // }
+
+    // anim_pos = anim_array.indexOf(anim);
