@@ -1,0 +1,16 @@
+
+  "background" : {
+    "scripts" : ["hello.js"] ,
+    "persistent" : false
+  },
+
+
+
+hello.js
+
+
+function printio(){
+  console.log("hello there");
+}
+
+chrome.scripting.executeScript({ function : printio });
