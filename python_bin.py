@@ -105,3 +105,70 @@
 # lst = [1,1,1,2,3,4,4,4,4,5,6,7,7,7]
 #
 # newl = itertools.groupby()
+
+
+# alice can produce a particular number of notebooks per day. given a range of days that each customer will wait, find out how many notebooks she needs to make per day to satisfy each customer
+# eg
+# 2 2 1 - customer a
+# 2 3 3 - customer b
+# 2 3 1 - customer c
+# a needs one notebook by day 2, b needs three notebooks at either day 2 or day 3, c needs one notebook at either day 2 or day 3. so she needs to make two notebooks per day, starting from day 1
+# day one she has two notes, day two she has four notes. so she sends off customer a. now in day three she makes two notes for a total of 5 notes and she gives b three and c 1
+
+
+# n = int(input())
+#
+# for i in range(n):
+#     mydic = {}
+#     customers = int(input())
+#     mindate = 1
+#     maxdate = 1
+#     maxnote = 1
+#     for i in range(customers):
+#         start,end,val = list(map(int,input().split()))
+#         mindate = mindate if (mindate < end) else end
+#         maxdate = maxdate if (maxdate > end) else end
+#         maxnote = maxnote if (maxnote > val) else val
+#         if end in mydic.keys():
+#             mydic[end] += val
+#         else:
+#             mydic[end] = val
+#
+#     custlist = list(mydic.keys()).sort()
+#
+#     for notecount in range(1,maxnote+1):
+#         sat = True
+#         curnote = mindate * notecount
+#         for day in range(mindate,maxdate+1):
+#             if (curnote < mydic[day]):
+#                 sat = False
+#                 break
+#             else:
+#                 curnote -= mydic[day]
+#                 curnote += notecount
+#         if (sat == False):
+#             continue
+#         else:
+#             ans = notecount
+#             break
+#     print(notecount)
+
+
+        # ans = notecount
+        # sat = True
+        # if (notecount*mindate < mydic[mindate]):
+        #     continue
+        # curnote = notecount*mindate - mydic[mindate]
+        # for day in range(1,len(custlist)):
+        #     curnote += ((custlist[day] - custlist[day-1])*notecount)
+        #     if (curnote < mydic[custlist[day]]):
+        #         sat = False
+        #         break
+        #     else:
+        #         curnote -= mydic[custlist[day]]
+        #         # curnote += notecount
+        # if (sat == False):
+        #     continue
+        # else:
+        #     ans = notecount
+        #     break

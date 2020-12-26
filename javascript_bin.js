@@ -371,3 +371,13 @@
     // }
 
     // anim_pos = anim_array.indexOf(anim);
+
+
+
+
+        // console.log((this.parent.pos.x,this.parent.pos.y,this.pos.x,this.pos.y));
+        // console.log(this.step);
+        // // this.amount = this.step * (this.max_lifetime-this.lifetime);
+
+  // this.step = dist(this.parent.pos.x,this.parent.pos.y,this.pos.x,this.pos.y) / 50000;
+  // // this.step = 0.01;
