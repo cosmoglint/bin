@@ -381,3 +381,23 @@
 
   // this.step = dist(this.parent.pos.x,this.parent.pos.y,this.pos.x,this.pos.y) / 50000;
   // // this.step = 0.01;
+
+
+
+
+      // //
+      // // para.innerText = "This worked bruv";
+      // // para.id = "joke";
+      // // parent_div.appendChild(para);
+      //
+      //
+      //
+      //       // console.log("hiya there");
+      //       // logger.innerText = "duh";
+      //
+      //       chrome.tabs.getSelected(function(tab){
+      //         // console.log(tab);
+      //         alert(tab.id);
+      //       });
+      //       // logger();
+      //       // alert("this works?");
