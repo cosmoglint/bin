@@ -183,3 +183,53 @@
 #         else:
 #             new += random.choice(alphabets_up)
 #     return new
+
+
+# def selection(generation_list):
+#     global target
+#     selected_org = min([tuple(survival_score(org,target)) + (org,)  for org in generation_list])
+#     return selected_org
+#
+# def mutate(current,current_variation_list):
+#     global alphabets_sample
+#     new = ""
+#     for i,val in enumerate(current_variation_list):
+#         if not(val):
+#             new += current[i]
+#         else:
+#             rand_change = random.randint(min(current_variation_list[i],0),max(current_variation_list[i],0))
+#             rand_ind = alphabets_sample.index(current[i]) + rand_change
+#             new += alphabets_sample[rand_ind]
+#     return new
+#
+#
+# def survival_score(current,target):
+#     global alphabets_sample
+#     score = 0
+#     current_variation_list = []
+#     for i,val in enumerate(current):
+#         cur_score =  - alphabets_sample.index(val) + alphabets_sample.index(target[i])
+#
+#         current_variation_list.append(cur_score)
+#         score += abs(cur_score)
+#     return score, current_variation_list
+#
+# def test(tester,target):
+#     global samples_per_generation
+#     t_score, t_current_variation_list = survival_score(tester,target)
+#     new = tester
+#     for i in range(samples_per_generation):
+#         new = mutate(new,t_current_variation_list)
+#         t_score, t_current_variation_list = survival_score(new,target)
+#     return new
+#
+# def main():
+#     global generation_list, samples_per_generation
+#
+#     generation = 0
+#     org_score, org_var_list, org = selection(generation_list)
+#     while (org != target):
+#         print(generation_list)
+#         generation += 1
+#         org_score, org_var_list, org = selection(generation_list)
+#         generation_list
