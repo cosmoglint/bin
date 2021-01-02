@@ -172,3 +172,14 @@
         # else:
         #     ans = notecount
         #     break
+
+
+# def mutate(current,current_variation_list):
+#     global alphabets_up
+#     new = ""
+#     for i,val in enumerate(current_variation_list):
+#         if not(val):
+#             new += current[i]
+#         else:
+#             new += random.choice(alphabets_up)
+#     return new
