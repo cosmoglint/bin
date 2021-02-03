@@ -911,3 +911,15 @@
     //   return queen_list
     //
     // }
+
+
+    // flipBoard(){
+    //     const changed_board = this.state.board_data.slice();
+    //     changed_board.reverse();
+    //     changed_board.map((subl) => {
+    //       let newl = subl.slice();
+    //       newl.reverse();
+    //       return newl
+    //     })
+    //     console.log(changed_board);
+    //   }
