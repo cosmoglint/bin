@@ -923,3 +923,22 @@
     //     })
     //     console.log(changed_board);
     //   }
+
+
+
+    // if (this.state.flipped === true){
+    //   let mad_array = this.state.board_data.slice();
+    //   mad_array.reverse();
+    //   console.log(mad_array);
+    //   mad_array = mad_array.map((subl) => {
+    //     let newl = subl.slice();
+    //     newl.reverse();
+    //     return newl
+    //   })
+    //   console.log(mad_array);
+    //   dupe_data = mad_array.slice();
+    //   console.log(dupe_data);
+    // }
+    // else{
+    //    dupe_data = this.state.board_data.slice()
+    // }
