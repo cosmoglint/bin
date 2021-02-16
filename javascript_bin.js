@@ -942,3 +942,23 @@
     // else{
     //    dupe_data = this.state.board_data.slice()
     // }
+
+
+          // piece_width: boundingBox.width,
+          // piece_height: boundingBox.height,
+
+
+
+  // constructor(props){
+  //   super(props);
+  //   this.squareRef = React.createRef();
+  // }
+  //
+  // componentDidMount(){
+  //   // console.log(piece_width,piece_height);
+  //   let square_bound = this.squareRef.current.getBoundingClientRect();
+  //   piece_width = square_bound.width;
+  //   piece_height = square_bound.height;
+  //   console.log(square_bound)
+  //
+  // }
