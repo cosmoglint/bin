@@ -962,3 +962,20 @@
   //   console.log(square_bound)
   //
   // }
+
+
+
+
+
+
+  // my_rectangle.prototype = {
+  //   render: function(ctx){
+  //     ctx.beginPath();
+  //     ctx.rect(this.startx,this.starty,this.endx,this.endy);
+  //     ctx.fillStyle = this.color;
+  //     ctx.fillRect(this.startx,this.starty,this.endx,this.endy);
+  //     ctx.fill();
+  //     // my_context.fillStyle = this.color;
+  //     // my_context.fillRect(this.startx,this.starty,this.endx,this.endy);
+  //   }
+  // }
