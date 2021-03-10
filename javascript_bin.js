@@ -979,3 +979,15 @@
   //     // my_context.fillRect(this.startx,this.starty,this.endx,this.endy);
   //   }
   // }
+
+
+
+
+
+
+  // my_context.fillStyle = random_color();
+  // my_context.fillRect(0,0,my_canvas.width, my_canvas.height);
+  //
+  // // my_context.fillStyle = 'blue';
+  // my_context.rect(50,50,100,100);
+  // my_context.fill();
