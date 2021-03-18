@@ -233,3 +233,61 @@
 #         generation += 1
 #         org_score, org_var_list, org = selection(generation_list)
 #         generation_list
+
+
+
+
+
+
+
+
+
+
+
+# def checker(lst):
+
+
+# def meximize(lst):
+#     # lst.sort()
+#     # dif = 0
+#     # val = 0
+#     myset = sorted(list(set(lst)))
+#     dupe = myset[:]
+#     # diff = len(lst) - len(myset)
+#     for i in myset:
+#         cnt = lst.count(i)
+#         if cnt > 1:
+#             dupe.extend([i]*(cnt-1))
+#         else:
+#             continue
+#     return dupe
+#
+#
+#
+#     # for i in range(len(myset)):
+#     #     # checker(myset[:i])
+#     #     if (myset[i] == i):
+#     #         val += i + 1
+#     #         dif = i + 1
+#     #     else:
+#     #         val += dif
+#     # return
+#
+#
+#
+# t = int(input())
+#
+# for i in range(t):
+#     n = int(input())
+#     lst = list(map(int,input().split()))
+#     print(" ".join(list(map(str,meximize(lst)))))
+#
+#
+#
+# # 3
+# # 7
+# # 4 2 0 1 3 3 7
+# # 5
+# # 2 2 8 6 9
+# # 1
+# # 0
