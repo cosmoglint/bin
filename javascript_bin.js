@@ -1010,3 +1010,168 @@
 //     ctx.stroke();
 //   }
 // }
+
+
+
+// type="range" min="1" max="100" value="50" class="slider"
+
+
+
+// // auto config fetcher from envfile
+//
+// const dotenv = require('dotenv');
+//
+// dotenv.config();
+//
+// module.exports = {
+//   expressPort: parseInt(process.env.EXPRESS_PORT),
+//   endPoint: process.env.MINIO_ENDPOINT,
+//   port: parseInt(process.env.MINIO_PORT),
+//   useSSL: (process.env.USE_SSL.toLowerCase() === 'true'),
+//   accessKey: process.env.ACCESS_KEY,
+//   secretKey: process.env.SECRET_KEY,
+//   bucketName: process.env.BUCKET_NAME,
+//   imageLocationLocal: process.env.IMAGE_LOCATION_LOCAL,
+//   hostPrefix: process.env.HOST_PREFIX
+// }
+//
+//
+// // get image from minio bucketName
+//
+//
+//
+// var Minio = require('minio');
+//
+// const {  endPoint, port, useSSL, accessKey, secretKey } = require('./config');
+//
+// var minioClient = new Minio.Client(
+//   {
+//     endPoint: endPoint,
+//     port: port,
+//     useSSL: useSSL,
+//     accessKey: accessKey,
+//     secretKey: secretKey
+//   }
+// );
+//
+//
+// let file = '/Users/ramprakash/development/projects/misc_folder/random_canvas.jpg'
+// let bucket_name = 'randoimages'
+//
+// //minioClient.fGetObject(bucket_name, 'random_canvas.jpg', file,  function(err){
+//   //if (err) return console.log(err);
+// //
+//   //console.log('file downloaded successfully');
+// //})
+//
+//
+// minioClient.presignedUrl('GET', bucket_name, 'random_canvas.jpg', 24*60*60, function(err, presignedUrl) {
+//   if (err) return console.log(err)
+//   console.log(presignedUrl)
+// })
+//
+//
+// // upload image to specified minio bucket
+//
+// var Minio = require('minio')
+//
+// const {  endPoint, port, useSSL, accessKey, secretKey } = require('./config');
+// console.log(port)
+// var minioClient = new Minio.Client(
+//   {
+//     endPoint: endPoint,
+//     port: port,
+//     useSSL: useSSL,
+//     accessKey: accessKey,
+//     secretKey: secretKey
+//   }
+// );
+//
+// let file = '/Users/ramprakash/Downloads/myCanvas_2.jpg'
+// let bucket_name = 'randoimages'
+//
+// var metaData = {
+//       'Content-Type': 'image/png',
+//       'X-Amz-Meta-random-number': 9390,
+//       'image-name': 'random_name'
+//   }
+//
+// minioClient.fPutObject(bucket_name, 'random_canvas.jpg', file, metaData, function(err, etag){
+//   if (err) return console.log(err);
+//
+//   console.log(etag);
+//   console.log('file_uploaded_successfully');
+// })
+//
+//
+// // create a new minio bucket
+//
+// var Minio = require('minio')
+//
+// const {  endPoint, port, useSSL, accessKey, secretKey } = require('config');
+//
+// var minioClient = new Minio.Client(
+//   {
+//     endPoint: endPoint,
+//     port: port,
+//     useSSL: useSSL,
+//     accessKey: accessKey,
+//     secretKey: secretKey
+//   }
+// );
+//
+// let file = '/Users/ramprakash/Downloads/myCanvas.jpg'
+// let bucket_name = 'randoimages'
+//
+// minioClient.makeBucket(bucket_name, 'us-east-1', function(err) {
+//   if (err) return console.log(err);
+//
+//   console.log('bucket created successfully');
+//   var metaData = {
+//         'Content-Type': 'image/png',
+//         'X-Amz-Meta-random-number': 9390,
+//         'image-name': 'random_name'
+//     }
+//
+//   minioClient.PutObjet('rando_images', 'random_canvas.jpg', file, metaData, function(err, etag){
+//     if (err) return console.log(err);
+//
+//     console.log(etag);
+//     console.log('file_uploaded_successfully');
+//   })
+// })
+//
+//
+// // test for uploading image
+//
+//
+// // Instantiate the minio client with the endpoint
+// // and access keys as shown below.
+// var minioClient = new Minio.Client({
+//     endPoint: 'play.min.io',
+//     port: 9000,
+//     useSSL: true,
+//     accessKey: 'Q3AM3UQ867SPQQA43P2F',
+//     secretKey: 'zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG'
+// });
+//
+// // File that needs to be uploaded.
+// var file = '/Users/ramprakash/Downloads/asdfgh.png'
+//
+// // Make a bucket called europetrip.
+// minioClient.makeBucket('testram', 'us-east-1', function(err) {
+//     if (err) return console.log(err)
+//
+//     console.log('Bucket created successfully in "us-east-1".')
+//
+//     var metaData = {
+//         'Content-Type': 'application/octet-stream',
+//         'X-Amz-Meta-Testing': 1234,
+//         'example': 5678
+//     }
+//     // Using fPutObject API upload your file to the bucket europetrip.
+//     minioClient.fPutObject('testram', 'asdfgh.png', file, metaData, function(err, etag) {
+//       if (err) return console.log(err)
+//       console.log('File uploaded successfully.')
+//     });
+// });
